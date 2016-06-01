@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="@android:color/white"
+    android:id="@+id/captcha_game_layout"
+    tools:context="gotr.bgu.final_project.CaptchaGameActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="What is your full-name?"
+        android:id="@+id/name"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lines="1"
+        android:tag = "fullname"
+        android:singleLine="true"
+        android:imeOptions="actionNext"
+        android:id="@+id/fullname"
+        android:layout_below="@+id/name"
+        android:gravity="left"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lines="1"
+        android:singleLine="true"
+        android:imeOptions="actionNext"
+        android:id="@+id/rockortrance"
+        android:layout_below="@+id/textView11"
+        android:gravity="left"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:tag="favorite_color" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="What is your favorite color?"
+        android:id="@+id/textView11"
+        android:layout_below="@+id/fullname"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:src="@drawable/dream"
+        android:layout_below="@+id/stairwaytoheaven"
+        android:layout_above="@+id/textView12"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:tag="band_pic" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lines="1"
+        android:singleLine="true"
+        android:imeOptions="actionDone"
+        android:id="@+id/dreamtheater"
+        android:gravity="left"
+        android:layout_above="@+id/findTheDiffBut"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:tag="band_name" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="What band is written above?"
+        android:id="@+id/textView12"
+        android:layout_above="@+id/dreamtheater"
+        android:layout_alignLeft="@+id/imageView"
+        android:layout_alignStart="@+id/imageView" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lines="1"
+        android:singleLine="true"
+        android:imeOptions="actionNext"
+        android:gravity="left"
+        android:id="@+id/stairwaytoheaven"
+        android:layout_below="@+id/textView13"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:tag="stairway_to_heaven" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Please write &quot;Stairway to heaven&quot;"
+        android:id="@+id/textView13"
+        android:layout_below="@+id/rockortrance"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="To next game."
+        android:id="@+id/findTheDiffBut"
+        android:onClick="toDifferenceGame"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:tag="to_next_game" />
+
+</RelativeLayout>

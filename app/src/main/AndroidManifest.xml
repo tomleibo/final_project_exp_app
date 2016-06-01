@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="gotr.bgu.final_project" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+
+
+    <uses-feature
+        android:name="android.hardware.touchscreen"
+        android:required="false" />
+    <uses-feature
+        android:name="android.software.leanback"
+        android:required="true" />
+    <uses-feature
+        android:name="android.hardware.accelerometer"
+        android:required="true" />
+    <uses-feature
+        android:name="android.hardware.gyroscope"
+        android:required="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Dataset"
+            android:label="@string/title_activity_dataset" >
+        </activity>
+        <activity
+            android:name=".ImagesActivity"
+            android:label="@string/title_activity_images" >
+        </activity>
+        <activity
+            android:name=".datafill"
+            android:label="@string/title_activity_datafill" >
+        </activity>
+        <activity android:name=".FinalscreenActivity" >
+        </activity>
+        <activity android:name=".ClickingGameActivity" >
+        </activity>
+        <service android:name="behavioralCapture.env.CommunicationService" android:enabled="true" android:exported="false"/>
+        <service android:name="behavioralCapture.softKeyboard.SoftKeyboard"
+            android:permission="android.permission.BIND_INPUT_METHOD">
+
+            <intent-filter>
+                <action android:name="android.view.InputMethod" />
+            </intent-filter>
+            <meta-data android:name="android.view.im" android:resource="@xml/method" />
+        </service>
+
+        <activity android:name="behavioralCapture.softKeyboard.ImePreferences" android:label="@string/settings_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".ChestGameActivity" >
+        </activity>
+        <activity android:name=".ChestGameVersion2Activity" >
+        </activity>
+        <activity android:name=".ChestGameGuidelinesActivity" >
+        </activity>
+        <activity android:name=".ClickingGameGuidelinesActivity" >
+        </activity>
+        <activity android:name=".FindTheDifferenceGuidelinesActivity" >
+        </activity>
+        <activity android:name=".CaptchaGameActivity" >
+        </activity>
+        <activity android:name=".CaptchaGameGuidelinesActivity" >
+        </activity>
+    </application>
+
+</manifest>

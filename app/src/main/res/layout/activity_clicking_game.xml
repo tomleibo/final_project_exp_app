@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="gotr.bgu.final_project.ClickingGameActivity"
+    android:id="@+id/clickingGameActivity"
+    android:tag="background">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Click me"
+        android:id="@+id/clickBut0"
+        android:visibility="invisible"
+        android:onClick="onClickGame"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:tag="click_button_0" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Click me"
+        android:id="@+id/clickBut1"
+        android:visibility="invisible"
+        android:onClick="onClickGame"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:tag="click_button_1" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Click me"
+        android:id="@+id/clickBut2"
+        android:visibility="invisible"
+        android:onClick="onClickGame"
+        android:layout_alignTop="@+id/clickBut1"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:tag="click_button_2" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Click me"
+        android:id="@+id/clickBut3"
+        android:visibility="invisible"
+        android:onClick="onClickGame"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:tag="click_button_3" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Click me"
+        android:id="@+id/clickBut4"
+        android:visibility="invisible"
+        android:onClick="onClickGame"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:tag="click_button_4" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Click me"
+        android:id="@+id/clickBut5"
+        android:visibility="invisible"
+        android:onClick="onClickGame"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/clickBut2"
+        android:layout_alignStart="@+id/clickBut2"
+        android:tag="click_button_5" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Click me"
+        android:id="@+id/clickBut6"
+        android:visibility="invisible"
+        android:onClick="onClickGame"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:tag="click_button_6" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Click me"
+        android:id="@+id/clickBut7"
+        android:visibility="invisible"
+        android:onClick="onClickGame"
+        android:layout_alignTop="@+id/clickBut0"
+        android:layout_alignLeft="@+id/clickBut2"
+        android:layout_alignStart="@+id/clickBut2"
+        android:tag="click_button_7" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Click me"
+        android:id="@+id/clickBut8"
+        android:visibility="invisible"
+        android:onClick="onClickGame"
+        android:layout_alignTop="@+id/clickBut0"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:tag="click_button_8" />
+
+
+</RelativeLayout>
